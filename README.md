@@ -82,7 +82,9 @@ In web servers, input from users is a potential entry point. If an attacker send
 In database systems, a poorly sanitized input can lead to a stack overflow. An attacker can then inject SQL commands, altering the intended database queries and gaining unauthorized access to sensitive information.
 Preventing stack overflow vulnerabilities involves robust input validation, using secure coding practices, and implementing protective mechanisms within the software.
 
-# Vulnerable Code Example:
+# A step-by-step demonstration of how a stack based buffer overflow attack works
+
+## Vulnerable Code Example:
 A vulnerable C program with a buffer that lacks proper boundary checks was presented. The code snippet demonstrated how an attacker could input a string longer than the buffer size, leading to a buffer overflow.
 
 ## Exploitation:
